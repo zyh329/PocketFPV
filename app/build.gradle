@@ -1,15 +1,33 @@
 apply plugin: 'com.android.application'
 
+def verCode = 2
+def verName = "0.02"
+def minSDK = 18
+def tarSDK =23
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
+
     defaultConfig {
         applicationId "com.tairtech.pocketfpv"
-        minSdkVersion 18
-        targetSdkVersion 23
-        versionCode 1
-        versionName '0.01'
+        minSdkVersion minSDK
+        targetSdkVersion tarSDK
+        versionCode verCode
+        versionName verName
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //jni.srcDirs = ['libs']
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -26,4 +44,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.jakewharton:butterknife:5.1.1'
     compile 'com.android.support:design:23.1.1'
+    compile 'com.umeng.analytics:analytics:5.6.4'
 }

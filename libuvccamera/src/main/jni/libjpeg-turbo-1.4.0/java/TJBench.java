@@ -26,10 +26,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-import java.io.*;
-import java.awt.image.*;
-import javax.imageio.*;
-import java.util.*;
 import org.libjpegturbo.turbojpeg.*;
 
 class TJBench {

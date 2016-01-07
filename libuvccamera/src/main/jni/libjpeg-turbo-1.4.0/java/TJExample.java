@@ -31,12 +31,6 @@
  * the TurboJPEG JNI wrapper
  */
 
-import java.io.*;
-import java.awt.*;
-import java.awt.image.*;
-import java.nio.*;
-import javax.imageio.*;
-import javax.swing.*;
 import org.libjpegturbo.turbojpeg.*;
 
 public class TJExample implements TJCustomFilter {

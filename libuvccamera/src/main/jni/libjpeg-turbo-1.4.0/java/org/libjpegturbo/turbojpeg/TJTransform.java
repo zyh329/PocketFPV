@@ -28,8 +28,6 @@
 
 package org.libjpegturbo.turbojpeg;
 
-import java.awt.*;
-
 /**
  * Lossless transform parameters
  */

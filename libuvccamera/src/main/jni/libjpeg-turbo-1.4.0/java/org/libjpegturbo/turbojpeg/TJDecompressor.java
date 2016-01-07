@@ -28,9 +28,6 @@
 
 package org.libjpegturbo.turbojpeg;
 
-import java.awt.image.*;
-import java.nio.*;
-
 /**
  * TurboJPEG decompressor
  */

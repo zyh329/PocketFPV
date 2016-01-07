@@ -28,9 +28,6 @@
 
 package org.libjpegturbo.turbojpeg;
 
-import java.awt.*;
-import java.nio.*;
-
 /**
  * Custom filter callback interface
  */
