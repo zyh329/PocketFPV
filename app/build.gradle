@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-def verCode = 2
+def verCode = 4
 def verName = "0.02"
 def minSDK = 18
 def tarSDK =23
