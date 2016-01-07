@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_device">错误，请确认设备已连接</string>
+    <string name="select">选择视频源</string>
+    <string name="refresh">刷 新</string>
+    <string name="camera">视频源</string>
+</resources>

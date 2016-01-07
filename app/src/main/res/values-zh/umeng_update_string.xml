@@ -11,6 +11,6 @@
 	<string name="UMAppUpdate">应用更新</string>
 	<string name="UMNotNow">以后再说</string>
 	<string name="UMIgnore">忽略该版</string>
-	<string name="UMToast_IsUpdating">正在更新中....</string>
+	<string name="UMToast_IsUpdating">正在更新中...</string>
 	<string name="UMDialog_InstallAPK">最新版本已下载，是否安装？</string>
 </resources>

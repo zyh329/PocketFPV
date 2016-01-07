@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <!--For update-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,22 +28,18 @@
         <!--For update service & Activity-->
         <service
             android:name="com.umeng.update.net.DownloadingService"
-            android:process=":DownloadingService" >
-        </service>
+            android:process=":DownloadingService"/>
         <activity
             android:name="com.umeng.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 
         <!--umeng meta-data-->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="568e24ade0f55ad5ce000cfa" >
-        </meta-data>
+            android:value="568e24ade0f55ad5ce000cfa"/>
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="Alpha_test" >
-        </meta-data>
+            android:value="Alpha_test"/>
     </application>
 
 </manifest>
